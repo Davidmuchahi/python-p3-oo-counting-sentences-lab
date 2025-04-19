@@ -26,8 +26,8 @@ class MyString:
         if not self._value:
             return 0
             
-        # Replace all sentence-ending punctuation with a single marker
+    
         replaced = self._value.replace('!', '.').replace('?', '.')
-        # Split on periods and filter out empty strings
+        
         sentences = [s for s in replaced.split('.') if s.strip()]
         return len(sentences)
